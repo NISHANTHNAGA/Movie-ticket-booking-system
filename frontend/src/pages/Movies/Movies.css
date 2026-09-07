@@ -1,0 +1,191 @@
+.movies-page{
+
+    padding:40px;
+
+}
+
+.movies-page h1{
+
+    margin-bottom:30px;
+
+}
+
+.movie-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(270px,1fr));
+
+    gap:30px;
+
+}
+
+/* =========================
+   MOVIE FILTERS
+========================= */
+
+.movie-filters {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto 35px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    background: #1d1d1d;
+
+    border: 1px solid #333;
+
+    border-radius: 12px;
+}
+
+
+.filter-group {
+    flex: 1;
+
+    min-width: 180px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.filter-group label {
+    color: #ddd;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.filter-group input {
+    width: 100%;
+
+    padding: 11px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #444;
+
+    border-radius: 7px;
+
+    background: #292929;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+
+.filter-group input:focus {
+    outline: none;
+
+    border-color: #e50914;
+
+    box-shadow:
+        0 0 7px rgba(229, 9, 20, 0.25);
+}
+
+
+.filter-btn,
+.clear-filter-btn {
+    height: 42px;
+
+    padding: 0 18px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.filter-btn {
+    background: #e50914;
+}
+
+
+.filter-btn:hover {
+    background: #ff3030;
+
+    transform: translateY(-2px);
+}
+
+
+.clear-filter-btn {
+    background: #444;
+}
+
+
+.clear-filter-btn:hover {
+    background: #555;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   NO MOVIES / LOADING
+========================= */
+
+.movies-message {
+    text-align: center;
+
+    color: #aaa;
+
+    margin-top: 30px;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .movie-filters {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 18px;
+    }
+
+
+    .filter-group {
+        width: 100%;
+    }
+
+
+    .filter-btn,
+    .clear-filter-btn {
+        width: 100%;
+    }
+
+}

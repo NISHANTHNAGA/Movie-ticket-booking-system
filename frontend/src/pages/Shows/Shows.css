@@ -1,0 +1,265 @@
+/* =========================
+   SHOWS PAGE
+========================= */
+
+.shows-page {
+    min-height: calc(100vh - 70px);
+
+    padding: 40px 30px 60px;
+
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(
+            circle at top center,
+            rgba(229, 9, 20, 0.12),
+            transparent 35%
+        );
+
+    color: white;
+
+    text-align: center;
+}
+
+
+/* =========================
+   PAGE TITLE
+========================= */
+
+.shows-page h1 {
+    margin: 0 0 15px;
+
+    color: #E50914;
+
+    font-size: 32px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   SELECTED DATE
+========================= */
+
+.selected-date {
+    margin: 0 auto 35px;
+
+    color: #bbb;
+
+    font-size: 16px;
+}
+
+
+.selected-date strong {
+    color: #fff;
+
+    padding: 7px 12px;
+
+    margin-left: 5px;
+
+    background: #222;
+
+    border: 1px solid #444;
+
+    border-radius: 7px;
+}
+
+
+/* =========================
+   SHOWS LIST
+========================= */
+
+.shows-list {
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(220px, 1fr)
+        );
+
+    gap: 20px;
+}
+
+
+/* =========================
+   SHOW CARD
+========================= */
+
+.show-card {
+    padding: 25px;
+
+    background: #222;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 15px;
+
+    box-sizing: border-box;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.show-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(229, 9, 20, 0.4);
+
+    box-shadow:
+        0 8px 25px rgba(229, 9, 20, 0.2);
+}
+
+
+/* =========================
+   SHOW TIME
+========================= */
+
+.show-card p:first-child {
+    margin: 0 0 15px;
+
+    color: white;
+
+    font-size: 22px;
+}
+
+
+.show-card p:first-child strong {
+    color: #E50914;
+}
+
+
+/* =========================
+   SHOW PRICE
+========================= */
+
+.show-card p:nth-child(2) {
+    margin: 0;
+
+    color: #bbb;
+
+    font-size: 16px;
+}
+
+
+.show-card p:nth-child(2)::first-letter {
+    color: #E50914;
+}
+
+
+/* =========================
+   SELECT SHOW BUTTON
+========================= */
+
+.show-card button {
+    width: 100%;
+
+    margin-top: 22px;
+
+    padding: 12px 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        90deg,
+        #E50914,
+        #ff3030
+    );
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.show-card button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 18px rgba(229, 9, 20, 0.4);
+}
+
+
+/* =========================
+   NO SHOWS / LOADING MESSAGE
+========================= */
+
+.shows-message {
+    margin: 60px auto;
+
+    color: #aaa;
+
+    font-size: 17px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .shows-page {
+        padding: 30px 15px 50px;
+    }
+
+
+    .shows-page h1 {
+        font-size: 28px;
+    }
+
+
+    .selected-date {
+        font-size: 14px;
+
+        line-height: 2;
+    }
+
+
+    .shows-list {
+        grid-template-columns: 1fr;
+
+        max-width: 450px;
+    }
+
+
+    .show-card {
+        padding: 22px;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .shows-page h1 {
+        font-size: 25px;
+    }
+
+
+    .show-card p:first-child {
+        font-size: 20px;
+    }
+
+}

@@ -1,0 +1,150 @@
+.movie-card {
+    width: 270px;
+
+    background: #222;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    transition: 0.3s ease;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.movie-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(229, 9, 20, 0.35);
+}
+
+
+/* POSTER */
+
+.movie-poster {
+    width: 100%;
+    height: 360px;
+
+    background: #2f2f2f;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-poster img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.movie-card:hover .movie-poster img {
+    transform: scale(1.04);
+}
+
+.movie-poster span {
+    font-size: 60px;
+}
+
+
+/* CONTENT */
+
+.movie-content {
+    padding: 20px;
+}
+
+.movie-content h2 {
+    margin: 0 0 18px;
+
+    color: white;
+
+    font-size: 21px;
+
+    line-height: 1.3;
+}
+
+.movie-content p {
+    margin: 9px 0;
+
+    color: #cfcfcf;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+.movie-content p span {
+    color: white;
+
+    font-weight: 600;
+}
+
+
+/* BOOK BUTTON */
+
+.book-btn {
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        90deg,
+        #e50914,
+        #ff3030
+    );
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.book-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(229, 9, 20, 0.4);
+}
+
+.book-btn:active {
+    transform: translateY(0);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .movie-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .movie-poster {
+        height: 400px;
+    }
+}

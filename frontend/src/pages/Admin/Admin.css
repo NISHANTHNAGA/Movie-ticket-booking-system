@@ -1,0 +1,336 @@
+.admin-page {
+    min-height: calc(100vh - 70px);
+
+    padding: 40px;
+
+    box-sizing: border-box;
+
+    background: #111;
+
+    color: white;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.admin-header {
+    max-width: 1200px;
+
+    margin: 0 auto 35px;
+}
+
+
+.admin-header h1 {
+    margin: 0 0 8px;
+
+    color: #e50914;
+
+    font-size: 34px;
+}
+
+
+.admin-header p {
+    margin: 0;
+
+    color: #aaa;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   STAT CARDS
+========================= */
+
+.admin-stats {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.stat-card {
+    padding: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    background: #222;
+
+    border: 1px solid #333;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+.stat-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #e50914;
+
+    box-shadow:
+        0 8px 25px
+        rgba(229, 9, 20, 0.2);
+}
+
+
+.stat-icon {
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 12px;
+
+    background: #2d2d2d;
+
+    font-size: 28px;
+}
+
+
+.stat-info h2 {
+    margin: 0;
+
+    font-size: 28px;
+
+    color: white;
+}
+
+
+.stat-info p {
+    margin: 5px 0 0;
+
+    color: #aaa;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   QUICK ACTIONS
+========================= */
+
+.quick-actions-section {
+    max-width: 1200px;
+
+    margin: 45px auto 0;
+}
+
+
+.quick-actions-section h2,
+.management-section h2 {
+    margin: 0 0 8px;
+
+    color: white;
+
+    font-size: 24px;
+}
+
+
+.quick-actions-section > p {
+    margin: 0 0 20px;
+
+    color: #888;
+}
+
+
+.quick-actions {
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+.quick-action-btn {
+    padding: 13px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #e50914;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.quick-action-btn:hover {
+    background: #ff3030;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px
+        rgba(229, 9, 20, 0.3);
+}
+
+
+/* =========================
+   MANAGEMENT
+========================= */
+
+.management-section {
+    max-width: 1200px;
+
+    margin: 45px auto 0;
+}
+
+
+.management-grid {
+    margin-top: 20px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.management-card {
+    padding: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    background: #1d1d1d;
+
+    border: 1px solid #333;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+.management-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #e50914;
+
+    background: #242424;
+}
+
+
+.management-card > span {
+    width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background: #292929;
+
+    font-size: 25px;
+}
+
+
+.management-card h3 {
+    margin: 0 0 6px;
+
+    color: white;
+
+    font-size: 17px;
+}
+
+
+.management-card p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .admin-stats {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .admin-page {
+        padding: 25px 15px;
+    }
+
+
+    .admin-header h1 {
+        font-size: 28px;
+    }
+
+
+    .admin-stats {
+        grid-template-columns: 1fr;
+    }
+
+
+    .management-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .quick-actions {
+        flex-direction: column;
+    }
+
+
+    .quick-action-btn {
+        width: 100%;
+    }
+
+}

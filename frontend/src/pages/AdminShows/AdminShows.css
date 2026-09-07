@@ -1,0 +1,211 @@
+.admin-shows-page {
+    min-height: calc(100vh - 70px);
+
+    padding: 40px;
+
+    box-sizing: border-box;
+
+    background: #111;
+
+    color: white;
+}
+
+
+.admin-shows-header {
+    max-width: 1100px;
+
+    margin: 0 auto 35px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.admin-shows-header h1 {
+    margin: 0 0 8px;
+
+    color: #e50914;
+}
+
+
+.admin-shows-header p {
+    margin: 0;
+
+    color: #aaa;
+}
+
+
+.add-show-btn {
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #e50914;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.add-show-btn:hover {
+    background: #ff3030;
+
+    transform: translateY(-2px);
+}
+
+
+.admin-show-list {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.admin-show-card {
+    padding: 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 25px;
+
+    background: #222;
+
+    border: 1px solid #333;
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+}
+
+
+.show-info {
+    flex: 1;
+}
+
+
+.show-info h2 {
+    margin: 0 0 15px;
+
+    color: white;
+}
+
+
+.show-info p {
+    margin: 8px 0;
+
+    color: #aaa;
+}
+
+
+.show-actions {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.edit-show-btn,
+.delete-show-btn {
+    padding: 9px 16px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.edit-show-btn {
+    background: #2563eb;
+}
+
+
+.edit-show-btn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+
+.delete-show-btn {
+    background: #dc2626;
+}
+
+
+.delete-show-btn:hover {
+    background: #b91c1c;
+
+    transform: translateY(-1px);
+}
+
+
+.shows-message {
+    text-align: center;
+
+    color: #aaa;
+}
+
+
+@media (max-width: 700px) {
+
+    .admin-shows-page {
+        padding: 25px 15px;
+    }
+
+
+    .admin-shows-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+
+    .admin-show-card {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .show-actions {
+        width: 100%;
+    }
+
+
+    .edit-show-btn,
+    .delete-show-btn {
+        flex: 1;
+    }
+
+}

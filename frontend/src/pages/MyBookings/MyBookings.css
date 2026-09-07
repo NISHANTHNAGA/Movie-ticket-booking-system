@@ -1,0 +1,165 @@
+.my-bookings-page {
+    min-height: calc(100vh - 70px);
+    padding: 40px;
+    text-align: center;
+}
+
+.my-bookings-page h1 {
+    margin-bottom: 30px;
+}
+
+.bookings-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.booking-card {
+    width: 500px;
+    max-width: 90%;
+
+    padding: 25px;
+
+    background-color: #222;
+    border-radius: 12px;
+
+    text-align: left;
+.my-bookings-page {
+    min-height: calc(100vh - 70px);
+    padding: 40px;
+    text-align: center;
+}
+
+.my-bookings-page h1 {
+    margin-bottom: 35px;
+    font-size: 32px;
+}
+
+
+/* Booking cards container */
+
+.bookings-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+
+/* Booking card */
+
+.booking-card {
+    width: 550px;
+    max-width: 90%;
+
+    padding: 25px 30px;
+
+    background-color: #222;
+    color: white;
+
+    border-radius: 12px;
+
+    text-align: left;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+    box-sizing: border-box;
+}
+
+
+/* Booking heading */
+
+.booking-card h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+
+    font-size: 22px;
+}
+
+
+/* Booking information */
+
+.booking-card p {
+    margin: 12px 0;
+
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+.booking-card strong {
+    display: inline-block;
+
+    min-width: 140px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .my-bookings-page {
+        padding: 25px 15px;
+    }
+
+    .my-bookings-page h1 {
+        font-size: 26px;
+    }
+
+    .booking-card {
+        width: 100%;
+
+        padding: 20px;
+    }
+
+    .booking-card p {
+        font-size: 14px;
+    }
+
+    .booking-card strong {
+        min-width: 120px;
+    }
+}
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.booking-card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.booking-card p {
+    margin: 10px 0;
+}
+
+.view-ticket-btn {
+    margin-top: 20px;
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #e50914;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.view-ticket-btn:hover {
+    background: #ff1a25;
+
+    transform: translateY(-2px);
+}

@@ -1,0 +1,236 @@
+.admin-theatres-page {
+    min-height: calc(100vh - 70px);
+
+    padding: 40px;
+
+    box-sizing: border-box;
+
+    background: #111;
+
+    color: white;
+}
+
+
+.admin-theatres-header {
+    max-width: 1100px;
+
+    margin: 0 auto 35px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.admin-theatres-header h1 {
+    margin: 0 0 8px;
+
+    color: #e50914;
+}
+
+
+.admin-theatres-header p {
+    margin: 0;
+
+    color: #aaa;
+}
+
+
+.add-theatre-btn {
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #e50914;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.add-theatre-btn:hover {
+    background: #ff3030;
+
+    transform: translateY(-2px);
+}
+
+
+.admin-theatre-list {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.admin-theatre-card {
+    padding: 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 25px;
+
+    background: #222;
+
+    border: 1px solid #333;
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+}
+
+
+.theatre-info {
+    flex: 1;
+}
+
+
+.theatre-info h2 {
+    margin: 0 0 15px;
+
+    color: white;
+}
+
+
+.theatre-info p {
+    margin: 8px 0;
+
+    color: #aaa;
+}
+
+
+.theatre-actions {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.edit-theatre-btn,
+.delete-theatre-btn {
+    padding: 9px 16px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.edit-theatre-btn {
+    background: #2563eb;
+}
+
+
+.edit-theatre-btn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+
+.delete-theatre-btn {
+    background: #dc2626;
+}
+
+
+.delete-theatre-btn:hover {
+    background: #b91c1c;
+
+    transform: translateY(-1px);
+}
+
+
+.theatres-message {
+    text-align: center;
+
+    color: #aaa;
+}
+
+
+@media (max-width: 700px) {
+
+    .admin-theatres-page {
+        padding: 25px 15px;
+    }
+
+
+    .admin-theatres-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+
+    .admin-theatre-card {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .theatre-actions {
+        width: 100%;
+    }
+
+
+    .edit-theatre-btn,
+    .delete-theatre-btn {
+        flex: 1;
+    }
+
+}
+
+.manage-movies-btn {
+    padding: 9px 16px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #16a34a;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.manage-movies-btn:hover {
+    background: #15803d;
+
+    transform: translateY(-1px);
+}

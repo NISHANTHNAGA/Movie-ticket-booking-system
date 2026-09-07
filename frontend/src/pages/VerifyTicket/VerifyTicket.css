@@ -1,0 +1,121 @@
+.verify-page {
+    min-height: calc(100vh - 70px);
+
+    padding: 40px 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    background: #111;
+
+    box-sizing: border-box;
+}
+
+
+.valid-ticket,
+.invalid-ticket {
+    width: 500px;
+
+    max-width: 100%;
+
+    padding: 35px;
+
+    box-sizing: border-box;
+
+    background: #222;
+
+    color: white;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.5);
+}
+
+
+.verification-icon {
+    font-size: 55px;
+
+    margin-bottom: 10px;
+}
+
+
+.valid-ticket h1 {
+    color: #4caf50;
+
+    margin-bottom: 8px;
+}
+
+
+.invalid-ticket h1 {
+    color: #e50914;
+
+    margin-bottom: 10px;
+}
+
+
+.verification-message {
+    color: #aaa;
+
+    margin-bottom: 30px;
+}
+
+
+.invalid-ticket p {
+    color: #aaa;
+}
+
+
+.verified-details {
+    margin-top: 25px;
+
+    text-align: left;
+}
+
+
+.verified-details div {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 13px 0;
+
+    border-bottom: 1px solid #333;
+}
+
+
+.verified-details span {
+    color: #aaa;
+}
+
+
+.verified-details strong {
+    text-align: right;
+}
+
+
+@media (max-width: 600px) {
+
+    .verify-page {
+        padding: 25px 15px;
+    }
+
+
+    .valid-ticket,
+    .invalid-ticket {
+        padding: 25px 20px;
+    }
+
+
+    .verified-details div {
+        font-size: 14px;
+    }
+
+}
